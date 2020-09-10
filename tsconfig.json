@@ -1,0 +1,26 @@
+{
+  "extends": "./node_modules/electron-webpack/tsconfig-base.json",
+  "compilerOptions": {
+    "target": "es2015",// 与 Vue 的浏览器支持保持一致
+    "module": "esnext",//指定模块生成方式
+    "strict": true,// 这可以对 `this` 上的数据属性进行更严格的推断
+    "jsx": "preserve",//jsx 的编译方式
+    "importHelpers": true,
+    "moduleResolution": "node",//指定模块解析方式，["classic" : "node"]
+    "noImplicitAny": true,//不允许隐式 any，如果true，函数的形参必须带类型
+    "noEmitOnError": false,//出错后，不输出文件
+    "experimentalDecorators": true,//允许注解语法
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,//详见 issue
+    "allowSyntheticDefaultImports": true,//允许引入没有默认导出的模块
+    "strictFunctionTypes": false,
+    "sourceMap": true,//生成对应的 map 文件
+    "baseUrl": ".",//与 path 一同 定义模块查找的路径 
+    "types": ["node"],//设置引入的定义文件
+    "paths": {//与 baseUrl 一同 定义模块查找的路径
+      "@/*": ["src/*"]
+	},
+	"allowJs": false,
+    "lib": ["es2018", "dom"]//引入库定义文件
+  }
+}
