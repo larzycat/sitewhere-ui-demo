@@ -93,7 +93,7 @@ export default {
 		}
 	},
 	methods:{
-		//初始化下拉菜单
+		//初始化下拉菜单20200911
 		deviceTypeSelect(){
 			let _self = this;
 			var url=_self.basePath+'/edgecompute/module/getDeviceType';
