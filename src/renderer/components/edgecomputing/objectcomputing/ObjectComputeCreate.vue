@@ -72,7 +72,7 @@ export default {
 		}
 		return {
 		 	modelV:[],
-			query: {//用于查询
+			query: {//用于查询1212
 				deviceType: '',//必须要定义下拉菜单，否则下拉菜单会不能进行选择
 				deviceId:'',
 				computeName:''
