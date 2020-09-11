@@ -59,7 +59,6 @@
 <script>
 import {getDeviceTypeList,createComputing} from '../api/api.js';
 export default {
-
 	data() {
 		 let reg=/^[A-Za-z0-9]/;
 		 var validateFiled=(rule,value,callback)=>{

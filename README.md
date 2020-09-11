@@ -1,2 +1,2 @@
-# sitewhere-ui-demo
+# sitewhere-admin-ui
 同步代码
